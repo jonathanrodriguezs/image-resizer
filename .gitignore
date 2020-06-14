@@ -1,0 +1,27 @@
+# explorer
+.DS_Store
+.directory
+desktop.ini
+
+# logs
+*.log
+
+# executables
+*.app
+*.exe
+
+# pyinstaller
+dist/
+build/
+*.spec
+
+# cache
+__pycache__/
+
+# images
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.png
+*.ico
