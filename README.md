@@ -1,4 +1,4 @@
-# Python keylogger
+# Image Editor
 
 Python image editor
 
@@ -26,7 +26,7 @@ sh linter.sh
 pyinstaller --noconsole --onefile editor.py
 ```
 
-## Code license
+## Code licensing
 
 All files on this repository are licensed as described on `LICENSE` file
 
