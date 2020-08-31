@@ -1,4 +1,4 @@
-# Image Editor
+# Icon creator
 
 Python image editor
 
