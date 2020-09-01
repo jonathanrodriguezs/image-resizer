@@ -10,6 +10,10 @@ desktop.ini
 *.app
 *.exe
 
+# Virtual environments
+env
+venv
+
 # pyinstaller
 dist/
 build/
