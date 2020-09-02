@@ -1,3 +1,4 @@
+import os
 from PIL import Image
 
 
@@ -7,7 +8,8 @@ def resize_image(path, new_path, width, height, crop_center=True):
     image = original_image if not crop_center else crop_center_image(
         original_image)
     new_image = image.resize((width, height))
-    new_image.save("{}-{}.{}".format(new_path, str(width), 'png'))
+    full_path = os.path.join(new_path, 'icon')
+    new_image.save("{}-{}.{}".format(full_path, str(width), 'png'))
 
 
 def crop_center_image(image, new_width=None, new_height=None):
@@ -27,6 +29,6 @@ def crop_center_image(image, new_width=None, new_height=None):
     return image
 
 
-def generate_icons(image, sizes=(32, 57, 76, 96, 128, 228)):
+def generate_icons(image, path, sizes=(32, 57, 76, 96, 128, 228)):
     for size in sizes:
-        resize_image(image, "icons/icon", size, size)
+        resize_image(image, path, size, size)
