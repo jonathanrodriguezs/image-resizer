@@ -4,9 +4,6 @@
 .directory
 desktop.ini
 
-# logs
-*.log
-
 # executables
 *.app
 *.exe
@@ -31,3 +28,6 @@ __pycache__/
 *.png
 *.ico
 icons
+
+# notes
+nothing.*
