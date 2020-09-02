@@ -1,6 +1,6 @@
 [MASTER]
 
-indent-string='  '
+indent-string='    '
 
 disable=line-too-long,
   bad-continuation,
