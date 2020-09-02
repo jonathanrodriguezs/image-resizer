@@ -1,4 +1,4 @@
-# Icon creator
+# Image resizer
 
 Python image editor
 
@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ## Run application
 
 ```shell
-python editor.py
+python main.py
 ```
 
 ## Lint all py files
@@ -23,13 +23,29 @@ sh linter.sh
 ## Create Windows executable
 
 ```shell
-pyinstaller --noconsole --onefile editor.py
+pyinstaller --noconsole --onefile main.py
 ```
 
-## Code licensing
+## Create new file pylintrc
 
-All files on this repository are licensed as described on `LICENSE` file
+```shell
+pylint --generate-rcfile > ./nothing.pylintrc
+```
+
 
 ## References
 
 * [Image Processing in Python with Pillow](https://auth0.com/blog/image-processing-in-python-with-pillow)
+* https://stackoverflow.com/questions/40292705/tkinter-file-pattern-set-in-a-file-dialog
+
+<!--
+
+## Create tag
+
+```shell
+gac Message # Add and commit
+git tag -a -m "Message" v0.1
+git push --follow-tags
+```
+
+-->

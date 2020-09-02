@@ -3,6 +3,14 @@
 indent-string='  '
 
 disable=line-too-long,
-  bad-continuation,
   missing-module-docstring,
   missing-function-docstring
+
+[BASIC]
+
+argument-naming-style=camelCase
+attr-naming-style=camelCase
+function-naming-style=camelCase
+method-naming-style=camelCase
+module-naming-style=camelCase
+variable-naming-style=camelCase

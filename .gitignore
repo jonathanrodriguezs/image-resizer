@@ -3,9 +3,6 @@
 .directory
 desktop.ini
 
-# logs
-*.log
-
 # executables
 *.app
 *.exe
@@ -25,3 +22,6 @@ __pycache__/
 *.webp
 *.png
 *.ico
+
+# notes
+nothing.*

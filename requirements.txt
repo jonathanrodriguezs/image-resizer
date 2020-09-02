@@ -1,3 +1,4 @@
 pyinstaller
 tkinter
 Pillow
+pylint
