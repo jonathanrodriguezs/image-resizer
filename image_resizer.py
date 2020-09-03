@@ -17,7 +17,10 @@ def crop_center_image(image, new_width=None, new_height=None):
     width, height = image.size  # Get dimensions
 
     if (new_width is None or new_height is None):
-        new_width, new_height = height, height
+        if width >= height:  # landscape crop
+            new_width, new_height = height, height
+        else:  # portrait crop
+            new_width, new_height = width, width
 
     left = (width - new_width) / 2
     top = (height - new_height) / 2

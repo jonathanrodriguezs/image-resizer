@@ -1,6 +1,5 @@
 from os import startfile
 import tkinter as tk
-import tkinter.ttk as ttk
 from tkinter import filedialog
 from tkinter import messagebox
 from PIL import Image, ImageTk
@@ -44,9 +43,6 @@ window = tk.Tk()
 window.title("Icon Generator")
 window.resizable(width=False, height=False)
 window.geometry("300x300")
-
-style = ttk.Style(window)
-style.theme_use("clam")
 
 tk.Button(window, text="Select image",
           command=open_file_browser).pack(fill='x')
